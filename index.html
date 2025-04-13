@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Délcio kibiana</title>
+  <link rel="stylesheet" href="src/styles/p_2.css">
+</head>
+<body>
+
+  <section id="sobre" class="secao">
+    <header>
+      <img id="h_1" src="src/images/primeiro.png" alt="">
+      <ul id="h_2">
+          <li><a href="#trajectoria">trajectoria</a></li>
+          <li><a href="#projectos">projectos</a></li>
+          <li><a href="#contacto">contacto</a></li>
+      </ul>
+  </header>
+  <div id="meio">
+    <img src="src/images/op_1.png" class="imagem" alt="Imagem animada">
+    <div id="txt_sobre">
+      <p style="color: #ff0000; font-size:20px;">delcio kibiana</p>
+      <h1>Desenvolvedor Web</h1>
+      <p>Eu sou um jovem iniciante porem promissor de 18 anos com uma paixão por
+          informatica e tudo em que nela reside,atualimente aprendendo design grafico,
+          marketing digital, desenvolvimento front e Back-end e edição de video, almejo de inicio
+          trabalhalhar com consultoria em TI.</p>
+      <a href="#trajectoria"><button id="sobre_button">continuar</button></a>
+
+  </div> </div>
+  </section>
+
+  <section id="trajectoria">
+    <div id="meio">
+        <div id="historia">
+            <h1>Educação</h1>
+            <nav id="meio" style="margin-top: 8%;">
+                <ul id="historia_1">
+                    <li>2010-2014:</li>
+                    <li>2015-2018:</li>
+                    <li>2019-2020:</li>
+                    <li>2021-2025:</li>
+                </ul>
+                <ul id="historia_2">
+                    <li style="margin-top:0;">Colégio distinto de merito<br>Iniciação a terceira classe</li>
+                    <li>Complexo Escolar Privado Saber<br>Quarta a sexta classe</li>
+                    <li>Colégio humbreteishon<br>Setima classe</li>
+                    <li>Complexo Escolar Privado Baptista da Paz<br>Oitava a decima terceira classe</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="Habilidades">
+            <h1>Habilidades tecnicas</h1>
+            <div id="meio">
+
+                <div id="Habilidade_icones">
+                    <h2>software skills</h2>
+                    <img src="src/images/photoshop.png" alt="">
+                    <img src="src/images/filmora.png" alt="">
+                    <img src="src/images/Capcut-logo.png" alt="">
+                    <br>
+                    <img src="vs.png" alt="">
+                    <img src="src/images/office-icon.png" alt="">
+                </div>
+<div>
+                    <h2>Coding skills</h>
+                        <h3>Conhecimento basico de :</h3>
+                        <ul style="display:flex;margin-top:2%;">
+                            <li>Html</li>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                        </ul>
+                        <ul style="display:flex;margin-top:2%;">
+                            <li>SQL</li>
+                            <li>CSS</li>
+                        </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="meio" class="meio">
+        <div id="linguas">
+        <h1>Linguas</h1>
+        <button class="botao-expandivel" data-maxwidth="100px">Japones</button>
+        <button class="botao-expandivel" data-maxwidth="300px">Portugues</button>
+        <button class="botao-expandivel" data-maxwidth="200px">Ingles</button>
+    </div>
+    <div id="linguas"id="contacto">
+    <h1>entrar em contacto</h1>
+        <button class="botao-expandivel" data-maxwidth="300px"><a href="">delciokibiana@gmail.com</a></button>
+        <button class="botao-expandivel" data-maxwidth="250px"><a href="https://wa.me/944950320">244944950320 / 956399211</a></button>
+        <button class="botao-expandivel" data-maxwidth="200px"><a href="https://www.instagram.com/delcio_kibiana?igsh=MXdsdzJieGhjN2xkeQ==">ig:delcio_kibiana</a> </button>
+    </div>
+</div>
+    
+</section>
+
+<section id="projectos">
+    <h1>projectos destacados</h1>
+  <div id="meio">
+    <div id="um">
+        <div id="um_1"style="background-color: #c3904d;">
+            <img src="src/images/op_2_png.png" alt="" style="width:70%; margin-left: 18%;" >
+        </div>
+        <div id="um_2">
+            <h2>Design drafico</h2>
+            <p>Logotipo criado para a empresa os Milhionarios do Campo</p>
+        </div>
+    </div>
+   
+    <div id="um">
+        <div id="um_1" style="background-color: #ff0000;">
+        </div>
+        <div id="um_2">
+            <h2>Desenvolvimento web</h2>
+            <p class="card-text">lading page criada para avaliação das minhas capacidades</p>
+            <a href="src/html/u.html"><h2 style="color: #ff0000;">entrar</h2></a>
+        </div>
+    </div>
+
+     <div id="um">
+        <div>
+        <video src="src/videos/vi1.mp4"autoplay loop muted playsinline></video></div>
+        <div class="m">
+            <h2>Edição de video</h2>
+            <p>highlight postado na minha conta do tik tok</p>
+        </div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <p>&copy; 2025 - Délcio. Todos os direitos reservados.</p>
+  <p>Morro Bento \ Municipio de Belas \ Luanda \ Angola</p>
+      </footer>
+
+</body>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('ativo');
+           botoes.forEach(botao => {
+                    botao.style.width = "150px";
+                }); 
+        } else {
+          entry.target.classList.remove('ativo');
+         botoes.forEach(botao => {
+                    const tamanho = botao.dataset.maxwidth;
+                    botao.style.width = tamanho;
+                });
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    const secoes = document.querySelectorAll('.secao');
+    secoes.forEach(secao => observer.observe(secao));
+    const botoes = document.querySelectorAll('.botao-expandivel');
+    const sec = document.getElementById('linguas');
+    sec.forEach(linguas => observer.observe(linguas));
+  </script>
+</html>
