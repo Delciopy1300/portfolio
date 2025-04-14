@@ -208,7 +208,7 @@ video{
   width: 80%; border-radius: 10px;
 }
 
-@media (max-width:765px){
+@media (min-width:426px) and (max-width:765px){
   section {
     height: 50vh;
   }
@@ -292,7 +292,103 @@ font-size: 20px;
         }
         .m{
         width:100%;
-        height: 34vh;
+        height: 26vh;
+        }
+        video{
+          width:100%;
+        }
+
+        footer p{
+font-size: 15px;
+        }
+}
+
+@media (min-width:320) and (max-width:425px){
+  #sobre {
+    height: 23vh;
+  }
+
+h1{
+font-size: 20px;
+  }
+  #h_1 {
+    width: 70px;
+    margin-left: 1%;
+  }
+
+  #h_2 {
+    display: flex;
+    margin-right: 20%;
+    margin-top: 2.5%;
+  }
+
+  #sobre p{
+    font-size: 10px;
+      }
+
+      #historia{
+        height:30%;
+      }
+
+      #historia_1 li {
+        font-size: 10px;
+      }
+      
+      #historia_2 li {
+        font-size: 8px;
+      }
+
+      #Habilidades h2{
+        font-size: 16px; 
+      }
+      #Habilidades h3,li{
+  font-size: 10px;
+      }
+      
+      #Habilidade_icones {
+        width: 50%;
+      }
+      
+      #Habilidade_icones img {
+        width: 25px;
+      }
+
+      .meio{
+        display: flex;
+        flex-direction: column;
+      }
+      #trajectoria {
+         height: 50vh;
+        }
+
+        #projectos{
+          font-size: 10px;
+          height: 35vh;
+        }
+
+        #um_1{
+          height: 5vh;
+        }
+        #um_1 img{
+         margin-top: 10%;
+        }
+        #um_1{
+          height: 18vh;
+        }
+        #um_2 p{
+          font-size: 10px;
+        
+        }
+        #um_2{
+          height:10vh;
+        }
+        .m p{
+          font-size: 10px;
+         
+        }
+        .m{
+        width:100%;
+        height: 14vh;
         }
         video{
           width:100%;
